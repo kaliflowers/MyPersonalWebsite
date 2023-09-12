@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="javascript" href="javascript.js">
+    <link rel="stylesheet" href="style.css">
+
+<header>
+    <span class="name">Kali Greenberg</span>
+    <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+    </nav>
+</header>
+</head>
+<body>
+    <button onclick="myinput()">Want to be emailed updates of my next project?</button>
+    <p id="msg"></p>
+<script>
+    function myinput(){   
+        var name= prompt("Enter Your Email");
+        
+			if (name == null || name == "") {
+				document.getElementById("msg").innerHTML = "You did not entert anything. Please enter your email again";
+			}
+			else
+			{
+				document.getElementById("msg").innerHTML = "You enterted: " + name;
+			}
+    }
+</script>
+    <h1>What I've been working on...</h1>
+    <div>
+    <h2>Project Endor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi at earum fuga harum alias nobis, eaque optio laudantium dolor sed eligendi consequatur distinctio aperiam accusantium, architecto exercitationem perferendis minus error.</p>
+    <p>Fuga dolore impedit suscipit, vero odit, sequi in deleniti, odio ipsa facere et. Consequatur modi cum ullam adipisci unde amet qui sed odio officia ipsa omnis earum quibusdam, dolor totam?</p>
+    </div>
+    <div><h2>Project Standup</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi at earum fuga harum alias nobis, eaque optio laudantium dolor sed eligendi consequatur distinctio aperiam accusantium, architecto exercitationem perferendis minus error.</p>
+    <p>Fuga dolore impedit suscipit, vero odit, sequi in deleniti, odio ipsa facere et. Consequatur modi cum ullam adipisci unde amet qui sed odio officia ipsa omnis earum quibusdam, dolor totam?</p>
+    </div>
+    <div>
+    <h2>Project TWOTone</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi at earum fuga harum alias nobis, eaque optio laudantium dolor sed eligendi consequatur distinctio aperiam accusantium, architecto exercitationem perferendis minus error.</p>
+    <p>Fuga dolore impedit suscipit, vero odit, sequi in deleniti, odio ipsa facere et. Consequatur modi cum ullam adipisci unde amet qui sed odio officia ipsa omnis earum quibusdam, dolor totam?</p>
+    </dv>
+
+
+</body>
+</html>
